@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile default="true" name="Default" enabled="true" />
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="customers" />
+        <module name="configserver" />
+        <module name="drives" />
+        <module name="gateway" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="customer" target="18" />
+      <module name="drive" target="18" />
+      <module name="untitled" target="18" />
+    </bytecodeTargetLevel>
+  </component>
+  <component name="JavacSettings">
+    <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="configserver" options="-parameters" />
+      <module name="customer" options="-parameters" />
+      <module name="customers" options="-parameters" />
+      <module name="drive" options="-parameters" />
+      <module name="drives" options="-parameters" />
+      <module name="gateway" options="-parameters" />
+      <module name="microservice" options="" />
+      <module name="untitled" options="-parameters" />
+    </option>
+  </component>
+</project>
