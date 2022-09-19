@@ -10,6 +10,7 @@
         <module name="customers" />
         <module name="configserver" />
         <module name="drives" />
+        <module name="eureka-server" />
         <module name="gateway" />
       </profile>
     </annotationProcessing>
@@ -26,6 +27,7 @@
       <module name="customers" options="-parameters" />
       <module name="drive" options="-parameters" />
       <module name="drives" options="-parameters" />
+      <module name="eureka-server" options="-parameters" />
       <module name="gateway" options="-parameters" />
       <module name="microservice" options="" />
       <module name="untitled" options="-parameters" />

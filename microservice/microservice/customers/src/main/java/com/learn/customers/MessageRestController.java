@@ -5,8 +5,8 @@ import org.springframework.cloud.context.config.annotation.RefreshScope;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RestController;
 
-@RestController
-@RefreshScope
+//@RestController
+//@RefreshScope
 public class MessageRestController {
     @Value("${text.service.name}")
     private String message;

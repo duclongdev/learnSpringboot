@@ -9,6 +9,7 @@ import org.springframework.web.bind.annotation.RestController;
 public class DriversController {
     @GetMapping("taxi")
     public String getTaxi(){
+        System.out.println("hi");
         return "You found a taxi. The taxi is comming";
     }
 }

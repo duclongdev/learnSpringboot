@@ -14,7 +14,7 @@ public class CustomersController {
     @GetMapping("findTaxi")
     public String findTaxi()
     {
-        String result = restTemplate.getForObject("http://localhost:8081/api/driver/taxi", String.class);
+        String result = restTemplate.getForObject("http://DRIVES/api/driver/taxi", String.class);
         return result;
     }
 }
