@@ -19,11 +19,11 @@ public class StudentController {
     public String hello(@RequestParam(name = "name", defaultValue = "World") String name){
         return String.format("Hello, %s", name);
     }
-    @GetMapping("fuck")
+    @GetMapping("hi")
     public String del(){
         Student student = studentRepo.findById(1L);
         System.out.println(student.toString());
-        return "deo";
+        return "hi";
     }
 
     @PostMapping()

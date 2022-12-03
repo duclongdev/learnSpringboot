@@ -17,10 +17,9 @@ import static org.junit.jupiter.api.Assertions.*;
 class StudentRepoStudent {
     @Resource
     private StudentRepo studentRepo;
-
     @Test
     void findById(){
-        Student student = new Student(1L, "long", "fudkc");
+        Student student = new Student(1L, "long", "hi");
         Student test = studentRepo.findById(1L);
         System.out.println(test);
         assertEquals(student, test);

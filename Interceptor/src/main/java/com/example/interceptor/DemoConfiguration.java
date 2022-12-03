@@ -8,9 +8,10 @@ import org.springframework.web.servlet.config.annotation.WebMvcConfigurer;
 public class DemoConfiguration implements WebMvcConfigurer {
     @Autowired
     DemoInterceptor demoInterceptor;
-
     @Override
     public void addInterceptors(InterceptorRegistry registry) {
-        registry.addInterceptor(demoInterceptor);
+  //     registry.addInterceptor(demoInterceptor);
+        registry.addInterceptor(demoInterceptor).addPathPatterns("/api/*");
     }
+
 }

@@ -4,19 +4,14 @@ import com.example.integrationtestrestcontrollers.common.exception.customerExcep
 import com.example.integrationtestrestcontrollers.entities.Student;
 import com.example.integrationtestrestcontrollers.repositories.StudentRepo;
 import com.example.integrationtestrestcontrollers.sevices.StudentService;
-import org.apache.ibatis.annotations.Mapper;
-import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Disabled;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.extension.ExtendWith;
 import org.junit.runner.RunWith;
-import org.mockito.ArgumentCaptor;
 import org.mockito.Mock;
-import org.mockito.MockitoAnnotations;
 import org.mockito.junit.jupiter.MockitoExtension;
 import org.mybatis.spring.boot.test.autoconfigure.MybatisTest;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.autoconfigure.jdbc.AutoConfigureTestDatabase;
 import org.springframework.test.context.junit4.SpringRunner;
 

@@ -9,7 +9,6 @@ import org.springframework.test.web.servlet.MockMvc;
 import org.springframework.test.web.servlet.MvcResult;
 import org.springframework.test.web.servlet.RequestBuilder;
 
-
 import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.springframework.test.web.servlet.request.MockMvcRequestBuilders.get;
 import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.content;
@@ -20,14 +19,12 @@ import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.
 class StudentControllerStudent2 {
     @Autowired
     private MockMvc mockMvc;
-
     @Test
     void hello() throws Exception {
         RequestBuilder requestBuilder = get("/hello");
         MvcResult result = mockMvc.perform(requestBuilder).andReturn();
-        assertEquals("Hello, Worldd", result.getResponse().getContentAsString());
+        assertEquals("Hello, World", result.getResponse().getContentAsString());
     }
-
     @Test
     public void helloWithName() throws Exception {
         mockMvc.perform(get("/hello?name=Long"))

@@ -38,7 +38,7 @@
       <dependency>
         <groupId>org.springframework.boot</groupId>
         <artifactId>spring-boot-dependencies</artifactId>
-        <version>{spring.boot.dependecies.version}</version>
+        <version>${spring.boot.dependecies.version}</version>
         <scope>runtime</scope>
         <type>pom</type>
       </dependency>
